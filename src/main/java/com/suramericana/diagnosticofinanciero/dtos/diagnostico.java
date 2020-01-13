@@ -2,6 +2,10 @@ package com.suramericana.diagnosticofinanciero.dtos;
 
 import java.util.Date;
 
+/**
+ * @author santaroc
+ *
+ */
 public class diagnostico {
 	
 	private int cddiagnostico;

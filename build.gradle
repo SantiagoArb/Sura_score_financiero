@@ -14,10 +14,14 @@ repositories {
 }
 
 dependencies {
-	 compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.16.8'
-  testCompileOnly group: 'org.projectlombok', name: 'lombok', version: '1.16.8'
+	// https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+	testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.5.2'
+	// https://mvnrepository.com/artifact/org.mockito/mockito-core
+	testCompile group: 'org.mockito', name: 'mockito-core', version: '2.28.2'
+	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.16.8'
+  	testCompileOnly group: 'org.projectlombok', name: 'lombok', version: '1.16.8'
 	// https://mvnrepository.com/artifact/com.google.guava/guava
-compile group: 'com.google.guava', name: 'guava', version: '11.0.2'
+	compile group: 'com.google.guava', name: 'guava', version: '11.0.2'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'

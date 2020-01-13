@@ -1,4 +1,4 @@
-package com.suramericana.diagnosticofinanciero.services;
+package com.suramericana.diagnosticofinanciero.services.diagnostico;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -7,13 +7,25 @@ import java.util.stream.Collectors;
 
 import com.suramericana.diagnosticofinanciero.dtos.diagnostico;
 
+/**
+ * @author santaroc
+ *
+ */
 public class diagnosticoService {
 	
+	/**
+	 * @param diag
+	 * @return
+	 */
 	public diagnostico crearDiagnostico(diagnostico diag) {
 		
 		return diag;
 	}
 	
+	/**
+	 * @param cdempresa
+	 * @return
+	 */
 	public List<diagnostico> obtenerDiagnosticos(String cdempresa){
 		
 		ArrayList<diagnostico> diagnosticos = new ArrayList<diagnostico>();
