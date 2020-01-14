@@ -20,7 +20,7 @@ import com.suramericana.diagnosticofinanciero.dto.diagnostico;
 public class DiagnosticoServiceImpl implements IDiagnosticoService{
 	
 	@Autowired
-	IDiagnosticoDao diagnosticoDao;
+	private IDiagnosticoDao diagnosticoDao;
 	
 	/**
 	 * @param diag

@@ -2,8 +2,10 @@ package com.suramericana.diagnosticofinanciero.service.simulacion;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.suramericana.diagnosticofinanciero.dao.simulacion.ISimulacionDao;
 import com.suramericana.diagnosticofinanciero.dto.simulacion;
 
 /**
@@ -13,7 +15,8 @@ import com.suramericana.diagnosticofinanciero.dto.simulacion;
 @Service
 public class SimulacionServiceImpl implements ISimulacionService{
 	
-	
+	@Autowired
+	private ISimulacionDao simDao;
 	/**
 	 * @param cdsimulacion
 	 * @return
