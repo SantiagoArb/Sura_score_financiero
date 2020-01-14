@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.suramericana.diagnosticofinanciero.services.diagnostico.diagnosticoService;
+import com.suramericana.diagnosticofinanciero.services.diagnostico.DiagnosticoService;
 
 @RestController
 public class mainController {

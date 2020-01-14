@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.suramericana.diagnosticofinanciero.dtos.diagnostico;
-import com.suramericana.diagnosticofinanciero.services.diagnostico.diagnosticoService;
+import com.suramericana.diagnosticofinanciero.services.diagnostico.DiagnosticoService;
 
 /**
  * @author santaroc
@@ -19,9 +19,9 @@ import com.suramericana.diagnosticofinanciero.services.diagnostico.diagnosticoSe
  */
 @RestController
 @RequestMapping(value="/diagnostico")
-public class diagnosticoController {
+public class DiagnosticoController {
 	
-	public final diagnosticoService diag_service = new diagnosticoService();
+	public final DiagnosticoService diag_service = new DiagnosticoService();
 	
 	
 	

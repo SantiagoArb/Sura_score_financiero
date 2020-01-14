@@ -11,7 +11,7 @@ import com.suramericana.diagnosticofinanciero.dtos.diagnostico;
  * @author santaroc
  *
  */
-public class diagnosticoService {
+public class DiagnosticoService {
 	
 	/**
 	 * @param diag

@@ -8,7 +8,7 @@ import com.suramericana.diagnosticofinanciero.dtos.simulacion;
  * @author santaroc
  *
  */
-public class simulacionService {
+public class SimulacionService {
 	
 	
 	/**
