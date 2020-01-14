@@ -1,20 +1,24 @@
-package com.suramericana.diagnosticofinanciero.services.simulacion;
+package com.suramericana.diagnosticofinanciero.service.simulacion;
 
 import java.util.List;
 
-import com.suramericana.diagnosticofinanciero.dtos.simulacion;
+import org.springframework.stereotype.Service;
+
+import com.suramericana.diagnosticofinanciero.dto.simulacion;
 
 /**
  * @author santaroc
  *
  */
-public class SimulacionService {
+@Service
+public class SimulacionServiceImpl implements ISimulacionService{
 	
 	
 	/**
 	 * @param cdsimulacion
 	 * @return
 	 */
+	@Override
 	public List<simulacion> listarSimulacion(String cdsimulacion){
 		List<simulacion> listSimulaciones = null;
 		
@@ -26,6 +30,7 @@ public class SimulacionService {
 	 * @param sim
 	 * @return
 	 */
+	@Override
 	public simulacion crearSimulacion(simulacion sim) {
 		
 		return sim;

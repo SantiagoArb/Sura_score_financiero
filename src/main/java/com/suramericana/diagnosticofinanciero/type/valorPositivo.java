@@ -1,4 +1,4 @@
-package com.suramericana.diagnosticofinanciero.types;
+package com.suramericana.diagnosticofinanciero.type;
 
 import java.math.BigDecimal;
 import com.google.common.base.Preconditions;

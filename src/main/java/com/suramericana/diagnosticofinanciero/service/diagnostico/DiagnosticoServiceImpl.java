@@ -1,22 +1,32 @@
-package com.suramericana.diagnosticofinanciero.services.diagnostico;
+package com.suramericana.diagnosticofinanciero.service.diagnostico;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.suramericana.diagnosticofinanciero.dtos.diagnostico;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.suramericana.diagnosticofinanciero.dao.diagnostico.IDiagnosticoDao;
+import com.suramericana.diagnosticofinanciero.dto.diagnostico;
 
 /**
  * @author santaroc
  *
  */
-public class DiagnosticoService {
+
+@Service
+public class DiagnosticoServiceImpl implements IDiagnosticoService{
+	
+	@Autowired
+	IDiagnosticoDao diagnosticoDao;
 	
 	/**
 	 * @param diag
 	 * @return
 	 */
+	@Override
 	public diagnostico crearDiagnostico(diagnostico diag) {
 		
 		return diag;
@@ -26,6 +36,7 @@ public class DiagnosticoService {
 	 * @param cdempresa
 	 * @return
 	 */
+	@Override
 	public List<diagnostico> obtenerDiagnosticos(String cdempresa){
 		
 		ArrayList<diagnostico> diagnosticos = new ArrayList<diagnostico>();

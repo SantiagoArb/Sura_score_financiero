@@ -1,11 +1,14 @@
-package com.suramericana.diagnosticofinanciero.dtos;
+package com.suramericana.diagnosticofinanciero.dto;
 
 import java.util.Date;
+
+import org.springframework.stereotype.Component;
 
 /**
  * @author santaroc
  *
  */
+@Component
 public class diagnostico {
 	
 	private int cddiagnostico;

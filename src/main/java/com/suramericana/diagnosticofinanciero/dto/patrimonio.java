@@ -1,6 +1,6 @@
-package com.suramericana.diagnosticofinanciero.dtos;
+package com.suramericana.diagnosticofinanciero.dto;
 
-import com.suramericana.diagnosticofinanciero.types.valorPositivo;
+import com.suramericana.diagnosticofinanciero.type.valorPositivo;
 
 public class patrimonio {
 	
